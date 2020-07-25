@@ -8,6 +8,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+
 html {
     font-size: 62.5%;
 }
@@ -26,6 +27,8 @@ h1, h2, h3, h4, p, a, ul, ol, li, span {
 
 h1, h2, h3, h4 {
     font-family: $accent-font;
+    color: $content-dark-font;
+    text-transform: uppercase;
 }
 
 p, a, ul, ol, li, span {
@@ -42,4 +45,8 @@ p {
 
 .italic-text {
     font-style: italic;
+}
+
+main {
+    background-image: url(../assets/section-background.png);
 }

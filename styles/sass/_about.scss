@@ -1,0 +1,36 @@
+.about {
+    min-height: 80vh;
+    margin-top: 50px;
+    line-height: 1.7;
+    p {
+        margin-top: 20px;
+    }
+}
+
+h2 {
+    text-align: right;
+    font-size: 15rem;
+    text-shadow: 10px 0px transparentize(black, 0.85);
+}
+
+h3 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.about-description {
+    // margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .about-image {
+        // width: 100%;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    .about-text {
+        // padding-left: 50px;
+    }
+}

@@ -252,6 +252,8 @@ h1, h2, h3, h4, p, a, ul, ol, li, span {
 
 h1, h2, h3, h4 {
   font-family: "Oswald", sans-serif;
+  color: #292929;
+  text-transform: uppercase;
 }
 
 p, a, ul, ol, li, span {
@@ -268,6 +270,10 @@ p {
 
 .italic-text {
   font-style: italic;
+}
+
+main {
+  background-image: url(../assets/section-background.png);
 }
 
 nav ul {
@@ -304,20 +310,25 @@ header {
   background-attachment: fixed;
   min-height: 85vh;
   color: #dbdbdb;
-  -webkit-box-shadow: 0px 10px 10px rgba(41, 41, 41, 0.3);
-          box-shadow: 0px 10px 10px rgba(41, 41, 41, 0.3);
+  -webkit-box-shadow: 0px 10px 10px rgba(41, 41, 41, 0.8);
+          box-shadow: 0px 10px 10px rgba(41, 41, 41, 0.8);
 }
 
-h1 {
+.header-content {
+  margin-top: 20px;
+}
+
+.header-content h1 {
   margin-top: 40px;
   text-transform: uppercase;
   font-size: 20rem;
+  color: #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
   position: relative;
   z-index: 0;
 }
 
-h1::before {
+.header-content h1::before {
   content: '';
   display: block;
   width: 105px;
@@ -328,10 +339,6 @@ h1::before {
   bottom: 23px;
   left: -50px;
   z-index: -20;
-}
-
-.header-content {
-  margin-top: 20px;
 }
 
 .header-content .aesthetic-text {
@@ -355,4 +362,42 @@ h1::before {
 
 .header-content .additional-description {
   font-size: 2.5rem;
+}
+
+.about {
+  min-height: 80vh;
+  margin-top: 50px;
+  line-height: 1.7;
+}
+
+.about p {
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: right;
+  font-size: 15rem;
+  text-shadow: 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.about-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-description .about-image img {
+  width: 100%;
+  display: block;
 }
