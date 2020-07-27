@@ -1,36 +1,52 @@
 .about {
-    min-height: 80vh;
-    margin-top: 50px;
     line-height: 1.7;
+    padding: 50px 0;
+    margin-top: 80px;
+    background-color: transparentize(white, 0.85);
+    box-shadow: 5px 5px 20px transparentize($content-dark-font, 0.85);
     p {
-        margin-top: 20px;
+        margin-top: 10px;
+        line-height: 1.7;
+        font-size: 1.6rem;
     }
-}
-
-h2 {
-    text-align: right;
-    font-size: 15rem;
-    text-shadow: 10px 0px transparentize(black, 0.85);
-}
-
-h3 {
-    font-size: 3rem;
-    letter-spacing: 1px;
 }
 
 .about-description {
     // margin-top: 40px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     .about-image {
-        // width: 100%;
+        width: 35%;
         img {
             width: 100%;
             display: block;
         }
     }
     .about-text {
-        // padding-left: 50px;
+        width: 65%;
+        padding: 0px 30px;
+        .about-main-content {
+            padding-bottom: 10px;
+        }
+        .fa-music {
+            font-size: 2rem;
+            color: $accent-cold-color;
+            text-shadow: 12px 0px $accent-warm-color;
+        }
+        .boring-title {
+            margin-top: 20px;
+        }
+        .boring-facts {
+            li {
+                font-size: 1.65rem;
+                list-style-type: none;
+                .fa-angle-right {
+                    font-size: 1.65rem;
+                    color: $content-dark-font;
+                    margin-right: 5px;
+                }
+            }
+        }
     }
 }

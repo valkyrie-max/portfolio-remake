@@ -1,0 +1,18 @@
+.toolkit {
+    margin-top: 40px;
+    padding: 0px 50px;
+    .toolkit-list-container {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        .toolkit-list,
+        .toolkit-learning {
+            // margin-right: 10rem;
+            line-height: 2;
+            li {
+                font-size: 1.6rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
