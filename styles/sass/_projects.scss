@@ -1,0 +1,32 @@
+.projects {
+    margin-top: 10rem;
+    .projects-container {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .project {
+            width: 48%;
+            background-color: transparentize(white, 0.85);
+            box-shadow: 5px 5px 20px transparentize($content-dark-font, 0.85);
+            margin-bottom: 20px;
+            padding: 20px;
+            h3 {
+                font-size: 3.5rem;
+                font-weight: 400;
+                .forward-slash {
+                    font-size: 4rem;
+                    font-weight: 300;
+                }
+                .projects-number {
+                    font-weight: 700;
+                    font-family: $accent-font;
+                    color: $accent-warm-color;
+                }
+                .odd-number {
+                    color: $accent-cold-color;
+                }
+            }
+        }
+    }
+}

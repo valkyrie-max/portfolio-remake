@@ -304,8 +304,8 @@ p {
   font-size: 2rem;
 }
 
-li {
-  list-style-type: none;
+.forward-slash {
+  font-family: "Oswald", sans-serif;
 }
 
 .fat-text {
@@ -476,5 +476,51 @@ header {
 .toolkit .toolkit-list-container .toolkit-list li,
 .toolkit .toolkit-list-container .toolkit-learning li {
   font-size: 1.6rem;
+  list-style-type: none;
   text-transform: uppercase;
+}
+
+.projects {
+  margin-top: 10rem;
+}
+
+.projects .projects-container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects .projects-container .project {
+  width: 48%;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.15);
+          box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.15);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.projects .projects-container .project h3 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.projects .projects-container .project h3 .forward-slash {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.projects .projects-container .project h3 .projects-number {
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  color: #e63946;
+}
+
+.projects .projects-container .project h3 .odd-number {
+  color: #3a86ff;
 }
