@@ -6,14 +6,14 @@
         flex-wrap: wrap;
         justify-content: space-between;
         .project {
-            width: 48%;
-            background-color: transparentize(white, 0.85);
-            box-shadow: 5px 5px 20px transparentize($content-dark-font, 0.85);
-            margin-bottom: 20px;
+            width: 47%;
+            box-shadow: 5px 5px 20px transparentize($content-dark-font, 0.75);
+            margin-bottom: 40px;
             padding: 20px;
             h3 {
                 font-size: 3.5rem;
                 font-weight: 400;
+                // color: $content-light-font;
                 .forward-slash {
                     font-size: 4rem;
                     font-weight: 300;
@@ -26,6 +26,24 @@
                 .odd-number {
                     color: $accent-cold-color;
                 }
+            }
+            .project-tools {
+                display: flex;
+                margin-top: 20px;
+                li {
+                    font-size: 1.5rem;
+                    letter-spacing: 1px;
+                    margin-right: 15px;
+                    padding: 5px;
+                    background-color: transparentize($content-dark-font, 0.45);
+                    color: $content-light-font;
+                    font-family: $accent-font;
+                    text-transform: uppercase;
+                    list-style-type: none;
+                }
+            }
+            .project-description {
+                font-size: 2rem;
             }
         }
     }

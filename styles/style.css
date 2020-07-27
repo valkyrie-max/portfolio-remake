@@ -286,8 +286,8 @@ h1::before {
 
 h2 {
   text-align: right;
-  font-size: 10rem;
-  text-shadow: 6px 0px rgba(0, 0, 0, 0.15);
+  font-size: 15rem;
+  text-shadow: 10px 0px rgba(0, 0, 0, 0.15);
 }
 
 h3 {
@@ -497,11 +497,10 @@ header {
 }
 
 .projects .projects-container .project {
-  width: 48%;
-  background-color: rgba(255, 255, 255, 0.15);
-  -webkit-box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.15);
-          box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.15);
-  margin-bottom: 20px;
+  width: 47%;
+  -webkit-box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.25);
+          box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.25);
+  margin-bottom: 40px;
   padding: 20px;
 }
 
@@ -523,4 +522,27 @@ header {
 
 .projects .projects-container .project h3 .odd-number {
   color: #3a86ff;
+}
+
+.projects .projects-container .project .project-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.projects .projects-container .project .project-tools li {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-right: 15px;
+  padding: 5px;
+  background-color: rgba(41, 41, 41, 0.55);
+  color: #dbdbdb;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.projects .projects-container .project .project-description {
+  font-size: 2rem;
 }
