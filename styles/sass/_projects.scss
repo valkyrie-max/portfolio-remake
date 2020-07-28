@@ -7,15 +7,16 @@
         justify-content: space-between;
         .project {
             width: 47%;
-            box-shadow: 5px 5px 20px transparentize($content-dark-font, 0.75);
+            background-color: transparentize(white, 0.85);
+            box-shadow: 5px 5px 20px transparentize($content-dark-font, 0.85);
             margin-bottom: 40px;
             padding: 20px;
+            transition: 0.3s all ease-in-out;
             h3 {
-                font-size: 3.5rem;
+                font-size: 3rem;
                 font-weight: 400;
-                // color: $content-light-font;
                 .forward-slash {
-                    font-size: 4rem;
+                    font-size: 3rem;
                     font-weight: 300;
                 }
                 .projects-number {
@@ -27,24 +28,67 @@
                     color: $accent-cold-color;
                 }
             }
+            .buttons {
+                display: flex;
+                margin-top: 35px;
+                margin-bottom: 10px;
+                li {
+                    list-style-type: none;
+                    margin-right: 20px;
+                    a {
+                        background-color: transparent;
+                        padding: 5px 30px;
+                        font-weight: 700;
+                        color: $content-dark-font;
+                        font-size: 1.8rem;
+                        font-family: $accent-font;
+                        text-transform: uppercase;
+                        border: 1px solid $content-dark-font;
+                        box-shadow: 6px 6px 0px transparentize($content-dark-font, 0.85);
+                        transition: 0.3s all ease-in-out;
+                    }
+                    a:hover,
+                    a:focus {
+                        background-color: $accent-cold-color;
+                        color: $content-light-font;
+                        box-shadow: 3px 3px 0px transparentize($content-dark-font, 0.65);
+                    }
+                }
+            }
+            .even-buttons {
+                li {
+                    a {
+                        background-color: transparent;
+                    }
+                    a:hover,
+                    a:focus {
+                        background-color: $accent-warm-color;
+                    }
+                }
+            }
             .project-tools {
                 display: flex;
-                margin-top: 20px;
+                margin-bottom: 20px;
                 li {
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                     letter-spacing: 1px;
                     margin-right: 15px;
                     padding: 5px;
-                    background-color: transparentize($content-dark-font, 0.45);
-                    color: $content-light-font;
+                    // background-color: transparentize($content-dark-font, 0.55);
+                    color: transparentize($content-dark-font, 0.5);
+                    border: 1px solid transparentize($content-dark-font, 0.6);
                     font-family: $accent-font;
                     text-transform: uppercase;
                     list-style-type: none;
                 }
             }
             .project-description {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
+        }
+        .project:hover {
+            background-color: transparentize(white, 0.65);
+            box-shadow: 10px 10px 20px transparentize($content-dark-font, 0.70);
         }
     }
 }
