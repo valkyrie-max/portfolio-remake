@@ -1,0 +1,14 @@
+footer {
+    .wrapper {
+        padding: 1rem;
+    }
+    background-color: $content-dark-font;
+    p {
+        text-transform: lowercase;
+        font-size: 1.5rem;
+        color: $content-light-font;
+        a {
+            color: $content-light-font;
+        }
+    }
+}

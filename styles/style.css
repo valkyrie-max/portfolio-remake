@@ -483,7 +483,7 @@ header {
 }
 
 .projects .projects-container {
-  margin-top: 20px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -597,4 +597,26 @@ header {
   background-color: rgba(255, 255, 255, 0.35);
   -webkit-box-shadow: 10px 10px 20px rgba(41, 41, 41, 0.3);
           box-shadow: 10px 10px 20px rgba(41, 41, 41, 0.3);
+}
+
+.blog h2 {
+  text-align: left;
+}
+
+footer {
+  background-color: #292929;
+}
+
+footer .wrapper {
+  padding: 1rem;
+}
+
+footer p {
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  color: #dbdbdb;
+}
+
+footer p a {
+  color: #dbdbdb;
 }
