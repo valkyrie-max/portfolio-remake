@@ -6,7 +6,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         .project {
-            width: 47%;
+            max-width: 450px;
             background-color: transparentize(white, 0.85);
             box-shadow: 5px 5px 20px transparentize($content-dark-font, 0.85);
             margin-bottom: 40px;

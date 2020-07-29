@@ -503,7 +503,7 @@ header {
 }
 
 .projects .projects-container .project {
-  width: 47%;
+  max-width: 450px;
   background-color: rgba(255, 255, 255, 0.15);
   -webkit-box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.15);
           box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.15);
@@ -623,10 +623,13 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .blog .blog-content .blog-post {
-  width: 31%;
+  min-width: 200px;
+  max-width: 280px;
   background-color: rgba(255, 255, 255, 0.15);
   -webkit-box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.15);
           box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.15);
@@ -730,6 +733,8 @@ footer .contact-content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer .contact-content .contact-means h3 {
@@ -764,6 +769,8 @@ footer .contact-content .contact-means ul li .even:focus {
 }
 
 footer .contact-content .copyright {
+  margin-top: 30px;
+  max-width: 500px;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }

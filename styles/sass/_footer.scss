@@ -9,7 +9,6 @@ footer {
         color: $content-light-font;
     }
     h3 {
-        // margin-top: 20px;
         color: $content-light-font;
     }
     h4 {
@@ -25,8 +24,8 @@ footer {
         margin-top: 25px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         .contact-means {
-            // text-align: right;
             h3 {
                 font-size: 2.5rem;
             }
@@ -52,6 +51,8 @@ footer {
             }
         }
         .copyright {
+            margin-top: 30px;
+            max-width: 500px;
             align-self: flex-end;
             // margin-top: 50px;
             p {

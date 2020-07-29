@@ -7,8 +7,10 @@
     .blog-content {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         .blog-post {
-            width: 31%;
+            min-width: 200px;
+            max-width: 280px;
             background-color: transparentize(white, 0.85);
             box-shadow: 5px 5px 20px transparentize($content-dark-font, 0.85);
             padding: 20px;
