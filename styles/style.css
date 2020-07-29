@@ -599,8 +599,63 @@ header {
           box-shadow: 10px 10px 20px rgba(41, 41, 41, 0.3);
 }
 
+.blog {
+  margin-top: 10rem;
+}
+
 .blog h2 {
   text-align: left;
+}
+
+.blog .blog-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog .blog-content .blog-post {
+  width: 31%;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.15);
+          box-shadow: 5px 5px 20px rgba(41, 41, 41, 0.15);
+  padding: 20px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog .blog-content .blog-post h3 {
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+}
+
+.blog .blog-content .blog-post p {
+  font-size: 1.6rem;
+}
+
+.blog .blog-content .blog-post .blog-post-text {
+  margin-bottom: 20px;
+}
+
+.blog .blog-content .blog-post .date {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.blog .blog-content .blog-post .medium-link {
+  text-align: right;
+  font-weight: 700;
+  color: #292929;
+  font-size: 1.6rem;
 }
 
 footer {

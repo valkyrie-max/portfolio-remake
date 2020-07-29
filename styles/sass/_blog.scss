@@ -1,5 +1,40 @@
 .blog {
+    margin-top: 10rem;
     h2 {
         text-align: left;
+    }
+    .blog-content {
+        display: flex;
+        justify-content: space-between;
+        .blog-post {
+            width: 31%;
+            background-color: transparentize(white, 0.85);
+            box-shadow: 5px 5px 20px transparentize($content-dark-font, 0.85);
+            padding: 20px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            h3 {
+                margin-bottom: 15px;
+                font-size: 2.2rem;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+            .blog-post-text {
+                margin-bottom: 20px;
+            }
+            .date {
+                font-style: italic;
+                font-size: 1.5rem;;
+                margin-bottom: 10px;
+            }
+            .medium-link {
+                text-align: right;
+                font-weight: 700;
+                color: $content-dark-font;
+                font-size: 1.6rem;
+            }
+        }
     }
 }
