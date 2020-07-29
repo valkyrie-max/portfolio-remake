@@ -445,6 +445,14 @@ header {
   list-style-type: none;
 }
 
+.about-description .about-text .boring-facts li a {
+  color: #292929;
+}
+
+.about-description .about-text .boring-facts li a:hover {
+  color: rgba(41, 41, 41, 0.35);
+}
+
 .about-description .about-text .boring-facts li .fa-angle-right {
   font-size: 1.65rem;
   color: #292929;
@@ -601,6 +609,7 @@ header {
 
 .blog {
   margin-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .blog h2 {
@@ -686,19 +695,87 @@ header {
 }
 
 footer {
-  background-color: #292929;
+  background-image: url("../assets/header-background.png");
+  background-repeat: no-repeat;
+  background-position: 25% 40%;
+  background-attachment: fixed;
+  padding: 2rem;
 }
 
-footer .wrapper {
-  padding: 1rem;
-}
-
-footer p {
-  text-transform: lowercase;
-  font-size: 1.5rem;
+footer h2 {
+  font-size: 10rem;
   color: #dbdbdb;
 }
 
-footer p a {
+footer h3 {
+  color: #dbdbdb;
+}
+
+footer h4 {
+  color: #dbdbdb;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+footer p {
+  color: #dbdbdb;
+}
+
+footer .contact-content {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .contact-content .contact-means h3 {
+  font-size: 2.5rem;
+}
+
+footer .contact-content .contact-means ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .contact-content .contact-means ul li {
+  margin-right: 25px;
+}
+
+footer .contact-content .contact-means ul li a {
+  font-size: 4rem;
+  color: #dbdbdb;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+footer .contact-content .contact-means ul li a:hover,
+footer .contact-content .contact-means ul li a:focus {
+  color: #3a86ff;
+}
+
+footer .contact-content .contact-means ul li .even:hover,
+footer .contact-content .contact-means ul li .even:focus {
+  color: #e63946;
+}
+
+footer .contact-content .copyright {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+footer .contact-content .copyright p {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  font-size: 1.6rem;
+  color: #dbdbdb;
+}
+
+footer .contact-content .copyright p a {
   color: #dbdbdb;
 }

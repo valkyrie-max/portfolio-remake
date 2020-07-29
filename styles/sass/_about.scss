@@ -39,6 +39,12 @@
             li {
                 font-size: 1.65rem;
                 list-style-type: none;
+                a {
+                    color: $content-dark-font;
+                }
+                a:hover {
+                    color: transparentize($content-dark-font, 0.65);
+                }
                 .fa-angle-right {
                     font-size: 1.65rem;
                     color: $content-dark-font;
