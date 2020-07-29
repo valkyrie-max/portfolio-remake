@@ -630,11 +630,27 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
-.blog .blog-content .blog-post h3 {
+.blog .blog-content .blog-post h3 a {
+  font-family: "Oswald", sans-serif;
+  color: #292929;
   margin-bottom: 15px;
   font-size: 2.2rem;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.blog .blog-content .blog-post h3 a:focus,
+.blog .blog-content .blog-post h3 a:hover {
+  color: #3a86ff;
+}
+
+.blog .blog-content .blog-post h3 .even-number:focus,
+.blog .blog-content .blog-post h3 .even-number:hover {
+  color: #e63946;
 }
 
 .blog .blog-content .blog-post p {
@@ -652,10 +668,21 @@ header {
 }
 
 .blog .blog-content .blog-post .medium-link {
-  text-align: right;
   font-weight: 700;
   color: #292929;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.blog .blog-content .blog-post .medium-link:focus,
+.blog .blog-content .blog-post .medium-link:hover {
+  color: rgba(41, 41, 41, 0.45);
+}
+
+.blog .blog-content .blog-post:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  -webkit-box-shadow: 10px 10px 20px rgba(41, 41, 41, 0.3);
+          box-shadow: 10px 10px 20px rgba(41, 41, 41, 0.3);
 }
 
 footer {
