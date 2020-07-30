@@ -320,6 +320,11 @@ main {
   background-color: #dbdbdb;
 }
 
+.animate__animated.animate__fadeInLeft,
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 2s;
+}
+
 nav {
   padding-top: 20px;
 }
