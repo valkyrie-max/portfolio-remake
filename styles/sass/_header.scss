@@ -1,17 +1,51 @@
 nav {
-    padding-top: 20px;
+    box-shadow: 5px 5px 20px transparentize($content-dark-font, 0.65);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: black;
+    // padding: 15px 0px; 
+    // padding-left: 20px;
+    // padding-top: 20px;
+    h4 {
+        a {
+            span {
+                color: $content-light-font;
+                font-size: 2.5rem;
+                font-family: $accent-font;
+                transition: 0.3s all ease-in-out;
+            }
+        }
+        a:hover,
+        a:focus {
+            .blue {
+                color: $accent-cold-color;
+            }
+            .red {
+                color: $accent-warm-color;
+            }
+        }
+    }
     ul {
         display: flex;
         justify-content: right;
         li {
             list-style-type: none;
-            margin-right: 25px;
-            font-size: 2.2rem;
+            margin-right: 30px;
+            font-size: 1.8rem;
             font-weight: 300;
             a {
                 color: $content-light-font;
                 font-family: $accent-font;
                 text-transform: uppercase;
+                border-bottom: 1px solid transparent;
+                transition: 0.3s all ease-in-out;
+            }
+            a:hover,
+            a:focus {
+                padding-bottom: 4px;
+                border-bottom: 1px solid $accent-cold-color;
+                color: $accent-warm-color;
             }
         }
         li:last-child {
@@ -19,6 +53,17 @@ nav {
         }
     }
 }
+nav div.wrapper {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// .nav.scrolled {
+//     background-color: $content-light-font !important;
+//     transition: background-color 250ms ease-in-out;
+// }
 
 header {
     background-image: url('../assets/header-background.png');

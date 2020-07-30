@@ -9,4 +9,9 @@ $( document ).ready(function() {
 
     // animate on scroll
     AOS.init();
+
+    $(document).scroll(function () {
+        var $nav = $(".nav");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
 });
