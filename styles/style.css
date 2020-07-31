@@ -332,7 +332,7 @@ nav {
 
 nav h4 a span {
   color: #dbdbdb;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-family: "Oswald", sans-serif;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
@@ -432,6 +432,10 @@ header {
 
 .header-content .additional-description {
   font-size: 2.5rem;
+}
+
+.mq-nav {
+  display: none;
 }
 
 .about {
@@ -534,7 +538,7 @@ header {
 }
 
 .projects {
-  margin-top: 10rem;
+  padding-top: 10rem;
 }
 
 .projects .projects-container {
@@ -655,7 +659,7 @@ header {
 }
 
 .blog {
-  margin-top: 10rem;
+  padding-top: 10rem;
   padding-bottom: 10rem;
 }
 
@@ -832,4 +836,71 @@ footer .contact-content .copyright p {
 
 footer .contact-content .copyright p a {
   color: #dbdbdb;
+}
+
+@media (max-width: 960px) {
+  .wrapper {
+    padding: 5rem;
+  }
+  header {
+    min-height: 75vh;
+  }
+  h1 {
+    font-size: 15rem;
+  }
+  h2 {
+    font-size: 10rem;
+  }
+  h1:before {
+    width: 80px;
+    height: 120px;
+  }
+  .aesthetic-text span {
+    font-size: 2.5rem;
+  }
+  .header-content ol li {
+    font-size: 2.5rem;
+  }
+  .header-content .additional-description {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .about {
+    margin-top: 40px;
+  }
+  .about p {
+    font-size: 1.5rem;
+  }
+  .about-description .about-text .boring-facts li {
+    font-size: 1.45rem;
+  }
+  .projects .projects-container .project {
+    max-width: 350px;
+  }
+  .projects .projects-container .project h3,
+  .projects .projects-container .project h3 .forward-slash {
+    font-size: 2.5rem;
+  }
+  .projects .projects-container .project .project-tools li {
+    letter-spacing: normal;
+    font-size: 1.2rem;
+  }
+  .projects .projects-container .project .buttons li a {
+    font-size: 1.5rem;
+  }
+  .blog .blog-content .blog-post h3 a {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+  }
+  .blog .blog-content .blog-post p {
+    font-size: 1.4rem;
+  }
+  .blog .blog-content .blog-post .medium-link {
+    font-size: 1.2rem;
+  }
+  .blog .blog-content .blog-post {
+    max-width: 240px;
+  }
 }
