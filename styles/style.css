@@ -921,7 +921,7 @@ nav ul li.even a:hover {
 }
 
 footer {
-  background-image: url("../assets/header-background.png");
+  background-image: url("../assets/header-background.gif");
   background-repeat: no-repeat;
   background-position: 25% 40%;
   background-attachment: fixed;
@@ -972,6 +972,7 @@ footer .contact-content .contact-means ul {
 
 footer .contact-content .contact-means ul li {
   margin-right: 25px;
+  list-style-type: none;
 }
 
 footer .contact-content .contact-means ul li a {
@@ -1149,6 +1150,9 @@ footer .contact-content .copyright p a {
 @media (max-width: 770px) {
   nav {
     display: none;
+  }
+  header {
+    background-size: cover;
   }
   .mq-nav {
     display: block;

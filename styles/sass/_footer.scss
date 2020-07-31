@@ -1,5 +1,5 @@
 footer {
-    background-image: url('../assets/header-background.png');
+    background-image: url('../assets/header-background.gif');
     background-repeat: no-repeat;
     background-position: 25% 40%;
     background-attachment: fixed;
@@ -31,9 +31,9 @@ footer {
             }
             ul {
                 display: flex;
-                // justify-content: right;
                 li {
                     margin-right: 25px;
+                    list-style-type: none;
                     a {
                         font-size: 4rem;
                         color: $content-light-font;
@@ -54,9 +54,7 @@ footer {
             margin-top: 30px;
             max-width: 500px;
             align-self: flex-end;
-            // margin-top: 50px;
             p {
-                // text-align: right;
                 font-family: $accent-font;
                 letter-spacing: 1px;
                 text-transform: lowercase;
