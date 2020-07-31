@@ -404,6 +404,9 @@ header {
   background-attachment: fixed;
   min-height: 85vh;
   max-height: 100vh;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   color: #dbdbdb;
 }
 
