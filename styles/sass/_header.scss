@@ -50,6 +50,7 @@ nav {
         }
     }
 }
+
 nav div.wrapper {
     padding: 1rem 2rem;
     display: flex;
@@ -66,7 +67,6 @@ header {
     max-height: 100vh;
     color: $content-light-font;
 }
-
 
 .header-content {
     margin-top: 20px;
@@ -92,4 +92,131 @@ header {
 
 .mq-nav {
     display: none;
+}
+
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 60px;
+    z-index: 1;
+    a {
+        text-decoration: none;
+        color: $content-light-font;
+        font-family: $accent-font;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: color 0.3s ease;
+        font-size: 5rem;
+    }
+    input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 1; 
+    }
+    span {
+        width: 40px;
+        height: 4px;
+        display: block;
+        margin-bottom: 5px;
+        position: relative;
+        box-shadow: 2px 2px 10px transparentize($content-dark-font, 0.55);
+        background: $accent-cold-color;
+        z-index: 3;
+        transform-origin: 2px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+    span:first-child {
+        transform-origin: 0% 0%;
+    }
+    span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-4.5px, -10px);
+        background: $accent-warm-color;
+        box-shadow: none;
+    }
+    input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) translate(0px, 0px);
+    }
+    input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(4.5px, 0px);
+    }
+    .menu {
+        a:hover,
+        a:focus {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        position: absolute;
+        top: -50px;
+        width: 120vw;
+        height: 120vh;
+        margin: -100px 0 0 -700px;
+        padding: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: transparentize($content-dark-font, 0.1);
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        li {
+            width: 70%;
+            padding: 10px 0;
+            margin-top: 50px;
+            font-size: 5rem;
+            border-bottom: 1px solid $content-light-font;
+            h4 {
+                padding-bottom: 0;
+                a {
+                    border-bottom: none;
+                    display: flex;
+                    div {
+                        color: $content-light-font;
+                        font-size: 10rem;
+                        font-family: $accent-font;
+                        transition: 0.3s all ease-in-out;
+                    }
+                    .blue {
+                        color: $accent-cold-color;
+                    }
+                    .red {
+                        color: $accent-warm-color;
+                    }
+                }
+                a:hover,
+                a:focus {
+                    .blue {
+                        color: $content-light-font;
+                    }
+                    .red {
+                        color: $content-light-font;
+                    }
+                }
+            }
+        }
+    }
+    input:checked ~ ul {
+        transform: none;
+    }
+}
+
+nav ul li.even a:hover {
+    color: $accent-cold-color;
 }

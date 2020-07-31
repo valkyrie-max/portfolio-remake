@@ -1,4 +1,4 @@
-@media (max-width: 960px) {
+@media (max-width: 970px) {
     .wrapper {
         padding: 5rem;
     }
@@ -62,5 +62,79 @@
     }
     .blog .blog-content .blog-post {
         max-width: 240px;
+    }
+}
+
+@media (max-width: 850px) {
+    nav ul li {
+        margin-right: 50px;
+        font-weight: 500;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    .about-description {
+        flex-direction: column-reverse;
+    }
+    .about-description .about-image {
+        width: 50%;
+        align-self: center;
+    }
+    .about-description .about-text {
+        width: 100%;
+    } 
+    .toolkit .toolkit-list-container .toolkit-list li {
+        font-size: 1.4rem;
+    }
+    .projects .projects-container .project {
+        max-width: 320px;
+        padding: 15px;
+    }
+    .projects .projects-container .project h3, 
+    .projects .projects-container .project h3 .forward-slash {
+        font-size: 2rem;
+    }
+    .projects .projects-container .project .project-description {
+        font-size: 1.5rem;
+    }
+    .projects .projects-container .project .project-tools li {
+        font-size: 1.1rem;
+        padding: 3px;
+        font-weight: 500;
+        // letter-spacing: 0.5px;
+    }
+    .projects .projects-container .project .buttons li {
+        margin-right: 30px;
+    }
+    .projects .projects-container .project .buttons li a {
+        padding: 5px 10px;
+    }
+    .blog .blog-content {
+        flex-direction: column;
+    }
+    .blog .blog-content .blog-post {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .blog .blog-content .blog-post h3 a {
+        font-size: 2rem;
+    }
+    .blog .blog-content .blog-post p {
+        font-size: 1.6rem;
+    }
+    .blog .blog-content .blog-post .medium-link {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 770px) {
+    nav {
+        display: none;
+    }
+    .mq-nav {
+        display: block;
+    } 
+    .menu-toggle {
+        display: block;
     }
 }

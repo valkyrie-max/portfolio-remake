@@ -438,6 +438,175 @@ header {
   display: none;
 }
 
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 60px;
+  z-index: 1;
+}
+
+.menu-toggle a {
+  text-decoration: none;
+  color: #dbdbdb;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  font-size: 5rem;
+}
+
+.menu-toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1;
+}
+
+.menu-toggle span {
+  width: 40px;
+  height: 4px;
+  display: block;
+  margin-bottom: 5px;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 10px rgba(41, 41, 41, 0.45);
+          box-shadow: 2px 2px 10px rgba(41, 41, 41, 0.45);
+  background: #3a86ff;
+  z-index: 3;
+  -webkit-transform-origin: 2px 0px;
+          transform-origin: 2px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menu-toggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.menu-toggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+.menu-toggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-4.5px, -10px);
+          transform: rotate(45deg) translate(-4.5px, -10px);
+  background: #e63946;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) translate(0px, 0px);
+          transform: rotate(0deg) translate(0px, 0px);
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(2) {
+  -webkit-transform: rotate(-45deg) translate(4.5px, 0px);
+          transform: rotate(-45deg) translate(4.5px, 0px);
+}
+
+.menu-toggle .menu {
+  position: absolute;
+  top: -50px;
+  width: 120vw;
+  height: 120vh;
+  margin: -100px 0 0 -700px;
+  padding: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(41, 41, 41, 0.9);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.menu-toggle .menu a:hover,
+.menu-toggle .menu a:focus {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.menu-toggle .menu li {
+  width: 70%;
+  padding: 10px 0;
+  margin-top: 50px;
+  font-size: 5rem;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.menu-toggle .menu li h4 {
+  padding-bottom: 0;
+}
+
+.menu-toggle .menu li h4 a {
+  border-bottom: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-toggle .menu li h4 a div {
+  color: #dbdbdb;
+  font-size: 10rem;
+  font-family: "Oswald", sans-serif;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.menu-toggle .menu li h4 a .blue {
+  color: #3a86ff;
+}
+
+.menu-toggle .menu li h4 a .red {
+  color: #e63946;
+}
+
+.menu-toggle .menu li h4 a:hover .blue,
+.menu-toggle .menu li h4 a:focus .blue {
+  color: #dbdbdb;
+}
+
+.menu-toggle .menu li h4 a:hover .red,
+.menu-toggle .menu li h4 a:focus .red {
+  color: #dbdbdb;
+}
+
+.menu-toggle input:checked ~ ul {
+  -webkit-transform: none;
+          transform: none;
+}
+
+nav ul li.even a:hover {
+  color: #3a86ff;
+}
+
 .about {
   line-height: 1.7;
   padding: 50px 0;
@@ -838,7 +1007,7 @@ footer .contact-content .copyright p a {
   color: #dbdbdb;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 970px) {
   .wrapper {
     padding: 5rem;
   }
@@ -902,5 +1071,86 @@ footer .contact-content .copyright p a {
   }
   .blog .blog-content .blog-post {
     max-width: 240px;
+  }
+}
+
+@media (max-width: 850px) {
+  nav ul li {
+    margin-right: 50px;
+    font-weight: 500;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  .about-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-description .about-image {
+    width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .about-description .about-text {
+    width: 100%;
+  }
+  .toolkit .toolkit-list-container .toolkit-list li {
+    font-size: 1.4rem;
+  }
+  .projects .projects-container .project {
+    max-width: 320px;
+    padding: 15px;
+  }
+  .projects .projects-container .project h3,
+  .projects .projects-container .project h3 .forward-slash {
+    font-size: 2rem;
+  }
+  .projects .projects-container .project .project-description {
+    font-size: 1.5rem;
+  }
+  .projects .projects-container .project .project-tools li {
+    font-size: 1.1rem;
+    padding: 3px;
+    font-weight: 500;
+  }
+  .projects .projects-container .project .buttons li {
+    margin-right: 30px;
+  }
+  .projects .projects-container .project .buttons li a {
+    padding: 5px 10px;
+  }
+  .blog .blog-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog .blog-content .blog-post {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .blog .blog-content .blog-post h3 a {
+    font-size: 2rem;
+  }
+  .blog .blog-content .blog-post p {
+    font-size: 1.6rem;
+  }
+  .blog .blog-content .blog-post .medium-link {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 770px) {
+  nav {
+    display: none;
+  }
+  .mq-nav {
+    display: block;
+  }
+  .menu-toggle {
+    display: block;
   }
 }
