@@ -161,14 +161,14 @@ header {
         }
         position: absolute;
         top: -50px;
-        width: 120vw;
+        width: 150vw;
         height: 120vh;
         margin: -100px 0 0 -700px;
         padding: 110px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: transparentize($content-dark-font, 0.1);
+        background-color: transparentize(black, 0.1);
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
         

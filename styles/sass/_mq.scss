@@ -137,4 +137,165 @@
     .menu-toggle {
         display: block;
     }
+    .projects .projects-container {
+        flex-direction: column;
+    }
+    .projects .projects-container .project {
+        max-width: 100%;
+    }
+    .projects .projects-container .project h3, 
+    .projects .projects-container .project h3 .forward-slash {
+        font-size: 3rem;
+    }
+    .projects .projects-container .project .project-tools li {
+        font-size: 1.3rem;
+        padding: 5px;
+    }
+    .projects .projects-container .project .project-description {
+        font-size: 1.8rem;
+    }
+    .projects .projects-container .project .buttons li a {
+        padding: 5px 20px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .menu-toggle .menu {
+        padding: 200px;
+    }
+    .about-description .about-text,
+    .toolkit {
+        padding: 0px 20px;
+    }
+    .toolkit .toolkit-list-container .toolkit-list li {
+        font-size: 1.1rem;
+        letter-spacing: normal;
+    }
+}
+
+@media (max-width: 645px) {
+    .menu-toggle .menu {
+        padding: 300px;
+    }
+}
+
+@media (max-width: 590px) {
+    .wrapper {
+        padding: 2rem;
+    }
+    h1 {
+        font-size: 12rem;
+    }
+    h1::before {
+        height: 100px;
+        width: 110px;
+        top: 22px;
+        left: -55px;
+    }
+    header .wrapper {
+        padding: 5rem;
+    }
+    h2,
+    footer h2 {
+        font-size: 8rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    .menu-toggle .menu {
+        margin: -100px 0 0 -550px;
+    }
+    .menu-toggle .menu li {
+        border: none;
+    }
+    .header-content ol li {
+        font-size: 2rem;
+    }
+    .about-description .about-image {
+        width: 70%;
+    }
+    .toolkit .toolkit-list-container .toolkit-list li {
+        font-size: 1.1rem;
+    }
+    .projects .projects-container .project {
+        margin-bottom: 100px;
+    }
+    .projects .projects-container .project h3, 
+    .projects .projects-container .project h3 .forward-slash {
+        font-size: 2.2rem;
+    }
+    .projects .projects-container .project .project-tools li {
+        font-size: 1.1rem;
+    }
+    .projects .projects-container .project .project-description,
+    .projects .projects-container .project .buttons li a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 1rem;
+    }
+    .toolkit {
+        padding: 0px 10px;
+    }
+    .about {
+        padding: 20px 0px;
+    }
+    .toolkit {
+        display: none;
+    }
+    footer .contact-content .contact-means h3 {
+        font-size: 2rem;
+    }
+    footer h4 {
+        font-size: 1.5rem;
+    }
+    footer .contact-content .contact-means ul li a {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 435px) {
+    .menu-toggle {
+        right: 20px;
+        padding: 0;
+    }
+    .menu-toggle .menu {
+        width: auto;
+    }
+    header .wrapper {
+        padding: 3rem;
+    }
+    header {
+        min-height: 65vh;
+    }
+    h1 {
+        font-size: 10rem;
+    }
+    h1::before {
+        height: 80px;
+        top: 23px;
+    }
+    h2, footer h2 {
+        font-size: 6rem;
+    }
+    .aesthetic-text span {
+        font-size: 2rem;
+    }
+    .header-content ol li {
+        font-size: 1.8rem;
+    }
+    .header-content .additional-description {
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+    .projects .projects-container .project .project-tools li {
+        font-size: 1rem;
+    }
 }
