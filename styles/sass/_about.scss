@@ -7,7 +7,8 @@
     p {
         margin-top: 10px;
         line-height: 1.7;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
+        color: black;
     }
 }
 
@@ -24,6 +25,14 @@
     .about-text {
         width: 65%;
         padding: 0px 30px;
+        h2 {
+            font-size: 3rem;
+            text-align: start;
+            text-shadow: none;
+            line-height: normal;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
         .about-main-content {
             padding-bottom: 10px;
         }

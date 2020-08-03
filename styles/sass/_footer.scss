@@ -7,10 +7,12 @@ footer {
         border-bottom: 1px solid $content-light-font;
     }
     h3 {
-        color: $accent-warm-color;
+        font-family: $content-font;
+        color: $content-light-font;
     }
     h4 {
-        color: $accent-cold-color;
+        color: $content-light-font;
+        font-family: $content-font;
         letter-spacing: 1px;
         font-size: 1.8rem;
         margin-bottom: 15px;
@@ -34,16 +36,15 @@ footer {
                     list-style-type: none;
                     a {
                         font-size: 4rem;
-                        color: $content-light-font;
+                        color: $accent-cold-color;
                         transition: 0.3s all ease-in-out;
+                    }
+                    .even {
+                        color: $accent-warm-color;
                     }
                     a:hover,
                     a:focus {
-                        color: $accent-cold-color;
-                    }
-                    .even:hover,
-                    .even:focus {
-                        color: $accent-warm-color;
+                        color: $content-light-font;
                     }
                 }
             }
@@ -53,7 +54,7 @@ footer {
             max-width: 500px;
             align-self: flex-end;
             p {
-                font-family: $accent-font;
+                font-family: $content-font;
                 letter-spacing: 1px;
                 text-transform: lowercase;
                 font-size: 1.6rem;
