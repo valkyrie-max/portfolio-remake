@@ -7,12 +7,13 @@ footer {
     h2 {
         font-size: 10rem;
         color: $content-light-font;
+        border-bottom: 1px solid $content-light-font;
     }
     h3 {
-        color: $content-light-font;
+        color: $accent-warm-color;
     }
     h4 {
-        color: $content-light-font;
+        color: $accent-cold-color;
         letter-spacing: 1px;
         font-size: 1.8rem;
         margin-bottom: 15px;

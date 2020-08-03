@@ -931,14 +931,15 @@ footer {
 footer h2 {
   font-size: 10rem;
   color: #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 footer h3 {
-  color: #dbdbdb;
+  color: #e63946;
 }
 
 footer h4 {
-  color: #dbdbdb;
+  color: #3a86ff;
   letter-spacing: 1px;
   font-size: 1.8rem;
   margin-bottom: 15px;
@@ -1212,12 +1213,11 @@ footer .contact-content .copyright p a {
   }
   h1 {
     font-size: 12rem;
+    color: #3a86ff;
+    text-shadow: 8px 0px #e63946;
   }
   h1::before {
-    height: 100px;
-    width: 110px;
-    top: 22px;
-    left: -55px;
+    display: none;
   }
   header .wrapper {
     padding: 5rem;
@@ -1233,6 +1233,7 @@ footer .contact-content .copyright p a {
     margin: -100px 0 0 -550px;
   }
   .menu-toggle .menu li {
+    margin-top: 30px;
     border: none;
   }
   .header-content ol li {
