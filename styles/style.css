@@ -922,9 +922,10 @@ nav ul li.even a:hover {
 
 footer {
   background-image: url("../assets/header-background.gif");
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 25% 40%;
-  background-attachment: fixed;
   padding: 2rem;
 }
 
