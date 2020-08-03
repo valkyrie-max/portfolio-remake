@@ -60,14 +60,15 @@ nav div.wrapper {
 
 header {
     background-image: url('../assets/header-background.gif');
-    background-repeat: no-repeat;
-    background-position: 25% 40%;
-    background-attachment: fixed;
     min-height: 85vh;
     max-height: 100vh;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
+    background-position:center; 
+    background-attachment:scroll; 
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:cover; 
+    background-repeat:no-repeat;
     color: $content-light-font;
 }
 
